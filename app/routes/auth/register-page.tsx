@@ -1,9 +1,10 @@
-import { Label } from '@radix-ui/react-label'
 import { Button } from '~/components/ui/button'
 import { Card, CardContent } from '~/components/ui/card'
 import { Input } from '~/components/ui/input'
 
 import placeholder from '~/assets/images/placeholder.svg'
+import { Link } from 'react-router'
+import { Label } from '~/components/ui/label'
 
 const RegisterPage = () => {
   return (
@@ -73,9 +74,9 @@ const RegisterPage = () => {
               </div>
               <div className="text-center text-sm">
                 Do you have an account?{" "}
-                <a href="#" className="underline underline-offset-4">
+                <Link to="/auth/login" className="underline underline-offset-4">
                   Login
-                </a>
+                </Link>
               </div>
             </div>
           </form>
